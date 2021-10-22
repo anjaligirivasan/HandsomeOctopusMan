@@ -6,7 +6,9 @@ public class player : MonoBehaviour
 {
 
     // Cached component
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
+    //public Camera cam;
+    //Vector2 mousePos;
 
     //private float t = 0.0f;
     //private bool moving = false;
@@ -25,8 +27,6 @@ public class player : MonoBehaviour
         {
             print("up key was pressed");
             rb.velocity = new Vector2(0.0f, 4.0f);
-            //moving = true;
-            //t = 0.0f;
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
@@ -49,5 +49,14 @@ public class player : MonoBehaviour
         {
             print("space key was pressed");
         }
+
+        //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
+
+    //private void FixedUpdate()
+    //{
+    //    Vector2 lookDirection = mousePos - rb.position;
+    //    float angle = Mathf.Atan2(lookDirection.y, lookDirection.x)* Mathf.Rad2Deg - 90f;
+    //    .rotation = angle;
+    //}
 }

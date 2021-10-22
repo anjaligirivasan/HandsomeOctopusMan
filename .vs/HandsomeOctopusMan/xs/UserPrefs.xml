@@ -1,13 +1,23 @@
 ﻿<Properties StartupConfiguration="{64F55D6B-1D4F-3658-689D-68D9AA3C3966}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MainMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameHandler.cs">
     <Files>
+      <File FileName="Assets/player.cs" Line="40" Column="10" />
+      <File FileName="Assets/GameHandler.cs" Line="13" Column="60" />
+      <File FileName="Assets/CamFollow.cs" />
+      <File FileName="Assets/Shooting.cs" />
       <File FileName="Assets/MainMenu.cs" Line="16" Column="28" />
-      <File FileName="Assets/player.cs" Line="34" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HandsomeOctopusMan" expanded="True" selected="True" />
+          <Node name="HandsomeOctopusMan" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="CodeMonkey" expanded="True">
+                <Node name="MonoBehaviours" expanded="True" />
+              </Node>
+              <Node name="GameHandler.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
