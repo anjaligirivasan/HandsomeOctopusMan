@@ -7,11 +7,9 @@ public class player : MonoBehaviour
 
     // Cached component
     public Rigidbody2D rb;
-    //public Camera cam;
-    //Vector2 mousePos;
+    public Camera cam;
+    Vector2 mousePos;
 
-    //private float t = 0.0f;
-    //private bool moving = false;
 
     // Start is called before the first frame update
     void Start()
@@ -50,13 +48,13 @@ public class player : MonoBehaviour
             print("space key was pressed");
         }
 
-        //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
 
-    //private void FixedUpdate()
-    //{
-    //    Vector2 lookDirection = mousePos - rb.position;
-    //    float angle = Mathf.Atan2(lookDirection.y, lookDirection.x)* Mathf.Rad2Deg - 90f;
-    //    .rotation = angle;
-    //}
+    private void FixedUpdate()
+    {
+        Vector2 lookDirection = mousePos - rb.position;
+        float angle = Mathf.Atan2(lookDirection.y, lookDirection.x)* Mathf.Rad2Deg - 90f;
+        rb.rotation = angle;
+    }
 }
