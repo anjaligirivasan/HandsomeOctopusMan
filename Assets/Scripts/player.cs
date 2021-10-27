@@ -23,29 +23,23 @@ public class player : MonoBehaviour
         // player movement
         if(Input.GetKey(KeyCode.UpArrow))
         {
-            print("up key was pressed");
+            //print("up key was pressed");
             rb.velocity = new Vector2(0.0f, 4.0f);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            print("down key was pressed");
+           //print("down key was pressed");
             rb.velocity = new Vector2(0.0f, -4.0f);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            print("right key was pressed");
+            //print("right key was pressed");
             rb.velocity = new Vector2(4.0f, 0.0f);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            print("left key was pressed");
+            //print("left key was pressed");
             rb.velocity = new Vector2(-4.0f, 0.0f);
-        }
-
-        // to shoot ink
-        if (Input.GetKey(KeyCode.Space))
-        {
-            print("space key was pressed");
         }
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);

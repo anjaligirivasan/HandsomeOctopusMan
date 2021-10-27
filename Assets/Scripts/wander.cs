@@ -15,12 +15,6 @@ public class wander : MonoBehaviour
         StartCoroutine(StartWandering());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     IEnumerator StartWandering()
     {
         while (true)
@@ -29,28 +23,29 @@ public class wander : MonoBehaviour
             yield return Wander();
 
             // Wait for x seconds until I wander again
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(Random.Range(0f, 3f));
         }
     }
 
     IEnumerator Wander()
     {
         rb.velocity = new Vector2(Random.Range(-10.0f, 10.0f), Random.Range(-10.0f, 10.0f));
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         rb.velocity = new Vector2(0f, 0f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        Debug.Log("Collision!");
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log("Collision!");
+       // Debug.Log(collision.gameObject.name);
         if (collision.gameObject.name == "static ink(Clone)")
         {
-            Debug.Log("From a static inkl!");
+           // Debug.Log("From a static inkl!");
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(effect, 2f);
             Destroy(gameObject);
+            ScoreManager.Instance.DecreaseCount(1);
         }
     }
 }
