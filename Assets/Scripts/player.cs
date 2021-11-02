@@ -21,22 +21,22 @@ public class player : MonoBehaviour
     void Update()
     { 
         // player movement
-        if(Input.GetKey(KeyCode.UpArrow))
+        if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             //print("up key was pressed");
             rb.velocity = new Vector2(0.0f, 4.0f);
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
-           //print("down key was pressed");
+            //print("down key was pressed");
             rb.velocity = new Vector2(0.0f, -4.0f);
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             //print("right key was pressed");
             rb.velocity = new Vector2(4.0f, 0.0f);
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             //print("left key was pressed");
             rb.velocity = new Vector2(-4.0f, 0.0f);

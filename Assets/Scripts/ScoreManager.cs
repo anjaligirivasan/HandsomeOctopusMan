@@ -34,10 +34,6 @@ public class ScoreManager : MonoBehaviour
     {
         if (score <= 0)
             gameOverUI.SetActive(true);
-        if (Input.GetKeyDown("e"))
-        {
-            gameOverUI.SetActive(true);
-        }
 
         if (timerIsRunning)
         {
@@ -88,10 +84,7 @@ public class ScoreManager : MonoBehaviour
 
     public void GetTime(Text time)
     {
-        float minutes = Mathf.FloorToInt(timeRemaining / 60);
-        float seconds = Mathf.FloorToInt(timeRemaining % 60);
-
-        time.text = "Time left: " + string.Format("{0:00} : {1:00}", minutes, seconds);
+        time.text = timeText.text;
     }
 
     // screen control methods --------------------------------------------

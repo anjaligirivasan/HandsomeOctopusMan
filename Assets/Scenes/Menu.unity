@@ -393,7 +393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -178, y: -141}
+  m_AnchoredPosition: {x: -178, y: -144}
   m_SizeDelta: {x: 90.26, y: -17.539}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1164482988
@@ -524,7 +524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.581604, y: 5.290802}
+  m_AnchoredPosition: {x: -6, y: 5.290802}
   m_SizeDelta: {x: 197.1632, y: 51.4184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1234196103
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUIT
+  m_text: Ctrls
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -610,7 +610,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 49.557007, y: 0, z: 10.9913025, w: -15.6024475}
+  m_margin: {x: 14.341991, y: 0, z: 10.9913025, w: -15.6024475}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -912,7 +912,7 @@ GameObject:
   - component: {fileID: 1681452257}
   - component: {fileID: 1681452256}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: DirButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -935,8 +935,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 199, y: -141}
-  m_SizeDelta: {x: 90.26, y: -24.631}
+  m_AnchoredPosition: {x: 194.93271, y: -141}
+  m_SizeDelta: {x: 98.3946, y: -24.631}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1681452256
 MonoBehaviour:
@@ -984,7 +984,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 686994839}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: Directions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,27 +1,14 @@
 ﻿<Properties StartupConfiguration="{64F55D6B-1D4F-3658-689D-68D9AA3C3966}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScoreManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/BackMain.cs">
     <Files>
-      <File FileName="Assets/Scripts/ScoreManager.cs" Line="94" Column="37" />
-      <File FileName="Assets/Scripts/wander.cs" Line="48" Column="13" />
-      <File FileName="Assets/GameOver.cs" Line="14" Column="49" />
+      <File FileName="Assets/Scripts/player.cs" Line="26" Column="15" />
+      <File FileName="Assets/Scripts/MainMenu.cs" Line="14" Column="5" />
+      <File FileName="Assets/BackMain.cs" Line="10" Column="35" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="HandsomeOctopusMan" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="ScoreManager.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3e352697-adca-4a16-b24f-9bd6534f72e5" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0463f4d3-e46a-4acc-8e19-d2d13a8078d3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
