@@ -31,7 +31,7 @@ public class ScoreManager : MonoBehaviour
     }
 
     private void Update()
-    {
+    { 
         if (score <= 0)
             gameOverUI.SetActive(true);
 

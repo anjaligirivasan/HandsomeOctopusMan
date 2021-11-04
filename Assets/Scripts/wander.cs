@@ -6,7 +6,6 @@ public class wander : MonoBehaviour
 {
     public Rigidbody2D rb;
     public GameObject hitEffect;
-    // yield return new WaitForSeconds(float)
 
     // Start is called before the first frame update
     void Start()

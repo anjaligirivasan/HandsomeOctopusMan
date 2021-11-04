@@ -6,8 +6,14 @@ public class Shooting : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    private AudioSource shootSound;
 
     public float bulletForce = 20f;
+
+    private void Start()
+    {
+        shootSound = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -15,6 +21,7 @@ public class Shooting : MonoBehaviour
         if(Input.GetButtonDown("Fire1"))
         {
             Shoot();
+            shootSound.Play();
         }
     }
 
