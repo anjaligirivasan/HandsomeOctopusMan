@@ -33,7 +33,7 @@ public class ScoreManager : MonoBehaviour
     private void Update()
     { 
         if (score <= 0)
-            gameOverUI.SetActive(true);
+            GameOver();
 
         if (timerIsRunning)
         {
@@ -68,7 +68,14 @@ public class ScoreManager : MonoBehaviour
 
     public void GetScore(Text pop)
     {
-        pop.text = "Population: " + score;
+        if(score <= 0)
+        {
+            pop.text = "Population: " + score + "\n\nVictory!";
+        }
+        else
+        {
+            pop.text = "Population: " + score;
+        }
     }
 
     // time methods ---------------------------------------
